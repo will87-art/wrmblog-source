@@ -63,7 +63,4 @@ Faith – Refers to my Christian faith. My faith is my framework for understandi
 
 
 </div>
----
-title: About
-date: 2026-02-18 10:32:41
----
+
