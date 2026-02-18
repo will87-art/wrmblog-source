@@ -450,3 +450,20 @@ body {
 .article-entry p {
   margin-bottom: 1.3em;  /* nicer paragraph spacing */
 }
+
+/* Orange accent line under the header divider */
+#header {
+  position: relative; /* needed for ::after positioning */
+}
+
+#header::after {
+  content: "";
+  display: block;
+  height: 1px;              /* same thickness as the grey line */
+  background: #FF6B00;      /* Penguin-ish orange */
+  margin-top: 6px;          /* space below the existing grey line */
+}
+/* Orange menu separator "×" */
+.nav-spacer {
+  color: #FF6B00;
+}
