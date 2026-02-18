@@ -10,7 +10,7 @@ tags:
 }
 
 .section-title{
-  text-align:right;
+  text-align:Left;
   font-weight:600;
   margin-bottom:.4rem;
 }
@@ -56,7 +56,9 @@ Because I said I would to James and to Steve. Because I find other people readin
 <div class="section-line"></div>
 
 EICW – Exercise Induced Creative Writing. When I exercise, I feel my mind and body connected, and I write in my head what I am feeling and thinking. Sometimes, in the post-run/cycle/swim rush of endorphins, I am courageous enough to write down these compositions and post them to STRAVA.
+
 Lent – I have committed to writing something each day in Lent as a discipline and as a way of exploring my faith and sense of self.
+
 Faith – Refers to my Christian faith. My faith is my framework for understanding the world; it is precious to me. Sometimes I do not know if God is real. Sometimes I do not know if I believe or if I am pretending to. Sometimes I am pretending to. As a result of this, my faith has become a choice, no longer because I know it to be true but because I choose it. Much like a horseshoe nailed above a door, being lucky, whether you believe in it or not (see Niels Bohr), I rely on the fact that God exists, whether I believe in him or not. 
 
 
