@@ -1,6 +1,7 @@
 # Header
 menu:
   Home: /
+  About: /About
   Archives: /archives
   About: /about
 # rss: /atom.xml
