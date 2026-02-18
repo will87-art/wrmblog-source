@@ -14,7 +14,7 @@
             <% if (min2read(post.content) == 1){ %>
               <span class="meta-sep">×</span> <span class="article-time-to-read"><%= min2read(post.content) %> minute</span>
             <% } else { %>
-              × <span class="article-time-to-read"><%= min2read(post.content) %> minutes</span>
+               <span class="meta-sep">×</span> <span class="article-time-to-read"><%= min2read(post.content) %> minutes</span>
             <% } %>
 
           <% } %>
