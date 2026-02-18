@@ -471,3 +471,16 @@ body {
 .nav-spacer {
   color: #FF6B00 !important;
 }
+/* Style the "..." read-more link */
+
+.article-more-link a {
+  text-decoration: none !important;   /* remove underline */
+  border-bottom: none !important;     /* remove theme border underline */
+  font-size: 1.6em;                   /* increase dot size */
+  font-weight: 500;
+}
+
+/* Sometimes the theme draws the line using ::after */
+.article-more-link a::after {
+  display: none !important;
+}
