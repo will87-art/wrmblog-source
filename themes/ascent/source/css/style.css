@@ -20,6 +20,12 @@
   --body-stack: "Lora", "Georgia", "Times New Roman", serif;
   --secondary-stack: "Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif;
   --title-stack: "Playfair Display SC", "Georgia", serif;
+
+  /* Pro responsive widths */
+  --gutter: 4vw;
+  --wrapper-max: 1200px;               /* overall container width on desktop */
+  --measure-prose: 72ch;               /* ideal post reading width */
+  --measure-page: 1000px;              /* wider pages (About, etc.) */
 }
 
 html { height: 100%; }
@@ -45,7 +51,18 @@ body {
   margin: 3rem auto 10rem auto;
   max-width: 100%;
   padding: 1em;
-  width: 32em;
+
+  /* CHANGED:
+     Was: width: 32em; (too narrow on desktop)
+     Now: responsive width with a desktop cap */
+  width: min(calc(100vw - (var(--gutter) * 2)), 32em);
+}
+
+/* On desktop, widen the wrapper (this is the main fix) */
+@media (min-width: 1000px) {
+  #wrapper {
+    width: min(calc(100vw - (var(--gutter) * 2)), var(--wrapper-max));
+  }
 }
 
 @media all and (max-width:760px) { #wrapper { margin-top: 3rem; } }
@@ -463,6 +480,7 @@ td, th, table caption, table td, table th {
   float: right;
   padding: 0.5em;
 }
+
 /* Kill the tiny line under the "..." and make dots bigger */
 .article-more-link a {
   border-bottom: 0 !important;
@@ -475,44 +493,21 @@ td, th, table caption, table td, table th {
   display: inline-block;
 }
 
-/* ----------------------------
+/* ============================
    Pro responsive content widths
-   ---------------------------- */
+   (Optional: keep pages slightly wider than posts)
+   ============================ */
 
-/* Default long-form width (posts) */
-:root{
-  --measure-prose: 72ch;      /* ideal reading width */
-  --measure-page:  1000px;    /* standard page width */
-  --measure-wide:  1120px;    /* wide layout for special pages */
-  --gutter:        4vw;       /* responsive side padding */
-}
+/* Posts: keep comfortable measure even when wrapper is wide */
+@media (min-width: 1000px) {
+  #content .article-entry {
+    max-width: min(calc(100vw - (var(--gutter) * 2)), var(--measure-prose));
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-/* Apply a sensible max-width to common content containers */
-#content,
-.post-content,
-.article-entry,
-.page .post-content,
-.page-content,
-article{
-  max-width: min(calc(100vw - (var(--gutter) * 2)), var(--measure-prose));
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Make pages a bit wider than posts on desktop */
-@media (min-width: 1000px){
-  .page #content,
-  .page .post-content,
-  .page .article-entry,
-  .page article{
+  /* Pages (About, etc.) a bit wider */
+  body.page #content .article-entry {
     max-width: min(calc(100vw - (var(--gutter) * 2)), var(--measure-page));
   }
 }
-
-/* Utility: wide layout when you want it */
-.layout-wide{
-  max-width: min(calc(100vw - (var(--gutter) * 2)), var(--measure-wide)) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
