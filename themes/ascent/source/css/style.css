@@ -463,3 +463,14 @@ td, th, table caption, table td, table th {
   float: right;
   padding: 0.5em;
 }
+/* Kill the tiny line under the "..." and make dots bigger */
+.article-more-link a {
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+
+  font-size: 2.4em !important;   /* noticeably bigger */
+  line-height: 1 !important;
+  display: inline-block;
+}
