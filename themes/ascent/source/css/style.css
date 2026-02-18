@@ -463,7 +463,7 @@ body {
   background: #FF6B00;      /* Penguin-ish orange */
   margin-top: 6px;          /* space below the existing grey line */
 }
-/* Orange menu separator "×" */
-.nav-spacer {
+/* Orange meta separator "×" */
+.meta-sep {
   color: #FF6B00;
 }
