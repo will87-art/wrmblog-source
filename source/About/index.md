@@ -10,7 +10,7 @@ tags:
 }
 
 .section-title{
-  text-align:Left;
+  text-align: Left;
   font-weight:600;
   margin-bottom:.4rem;
 }
