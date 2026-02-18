@@ -1,25 +1,29 @@
 @import url('//fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:wght@400;900&display=swap');
- 
-/* general */
+
+/* =========================
+   general
+   ========================= */
 :root {
-  --bg-color: #fafafa;
+  --bg-color: #fafafa;                 /* softer page background */
   --code-bg-color: #f4f4f4;
   --text-color: #212121;
   --secondary-color: #808080;
   --tertiary-color: #b0b0b0;
+
   --link-color: #b5c8cf;
   --link-hover-color: #618794;
   --link-bg-color: #dae4e7;
   --selection-color: #dae4e7;
+
+  --accent-color: #FF6B00;             /* Penguin-ish orange */
+
   --body-stack: "Lora", "Georgia", "Times New Roman", serif;
   --secondary-stack: "Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif;
   --title-stack: "Playfair Display SC", "Georgia", serif;
 }
 
-html {
-  height: 100%;
-}
- 
+html { height: 100%; }
+
 body {
   background: var(--bg-color);
   color: var(--text-color);
@@ -31,7 +35,7 @@ body {
   position: relative;
   width: 100%;
 }
- 
+
 /* wrapper */
 #wrapper {
   background: none;
@@ -43,17 +47,29 @@ body {
   padding: 1em;
   width: 32em;
 }
- 
-@media all and (max-width:760px) {#wrapper {margin-top: 3rem;}}
-@media all and (max-width:520px) {#wrapper {margin-top: 1rem;}}
- 
-/* header */
+
+@media all and (max-width:760px) { #wrapper { margin-top: 3rem; } }
+@media all and (max-width:520px) { #wrapper { margin-top: 1rem; } }
+
+/* =========================
+   header
+   ========================= */
 #header {
   border-bottom: solid 1px var(--secondary-color);
   line-height: 0.6em;
   padding: 0.25em 0;
+  position: relative; /* needed for orange line below */
 }
- 
+
+/* Orange accent line under the header divider */
+#header::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: var(--accent-color);
+  margin-top: 6px;
+}
+
 #title {
   font-family: var(--title-stack);
   font-size: 2em;
@@ -75,9 +91,12 @@ body {
 
 .nav-spacer {
   margin: 0 0.5em;
+  color: var(--accent-color); /* Home × Archives */
 }
 
-/* posts */
+/* =========================
+   posts
+   ========================= */
 .article {
   border-bottom: solid 1px var(--secondary-color);
   margin: 2em 0;
@@ -88,7 +107,7 @@ body {
   margin-bottom: 1.75em;
   text-align: center;
 }
- 
+
 .article-title {
   font-family: var(--title-stack);
   font-size: 2em;
@@ -98,16 +117,25 @@ body {
 }
 
 .article-entry {
-  line-height: 1.5;
+  line-height: 1.7;      /* nicer reading */
   margin-bottom: 1em;
   overflow: visible;
+}
+
+.article-entry p {
+  margin-bottom: 1.3em;  /* nicer paragraph spacing */
 }
 
 .article-category {
   line-height: 1.5;
 }
- 
-.article-meta, .archive-article-date, .article-nav, .page-nav, .article-footer, .archive-article-word-count {
+
+.article-meta,
+.archive-article-date,
+.article-nav,
+.page-nav,
+.article-footer,
+.archive-article-word-count {
   color: var(--secondary-color);
   font-family: var(--secondary-stack);
   font-size: 0.9em;
@@ -118,12 +146,22 @@ body {
 }
 
 @media all and (max-width:760px) {
-  .article-meta, .archive-article-date, .article-nav, .page-nav, .article-footer, .archive-article-word-count {
+  .article-meta,
+  .archive-article-date,
+  .article-nav,
+  .page-nav,
+  .article-footer,
+  .archive-article-word-count {
     font-size: 1em;
   }
 }
 
-/* archive */
+/* meta separator × (date × words × minutes) */
+.meta-sep { color: var(--accent-color); }
+
+/* =========================
+   archive
+   ========================= */
 .archives-wrap {
   margin: 0.25rem 0;
   position: relative;
@@ -131,9 +169,7 @@ body {
 }
 
 @media all and (max-width:620px) {
-  .archives-wrap {
-    margin-left: 1rem;
-  }
+  .archives-wrap { margin-left: 1rem; }
 }
 
 .month {
@@ -153,13 +189,8 @@ body {
   left: -1em;
 }
 
-.hidden-input:checked ~ .month::before {
-  content: "– ";
-}
-
-.hidden-input:checked ~ .hidden {
-  display: block;
-}
+.hidden-input:checked ~ .month::before { content: "– "; }
+.hidden-input:checked ~ .hidden { display: block; }
 
 .archive-article {
   margin: 0.25em 0;
@@ -176,9 +207,7 @@ body {
   right: calc(100% - 1.5em);
 }
 
-.archive-article-title {
-  margin-right: 0.5em;
-}
+.archive-article-title { margin-right: 0.5em; }
 
 .archive-article-title {
   font: inherit;
@@ -192,21 +221,20 @@ body {
   text-transform: none;
 }
 
+/* =========================
+   nav (older/newer)
+   ========================= */
 .article-nav {
   display: flex;
   margin: 2em 0;
 }
 
-#article-nav-older, #article-nav-newer {
-  flex-basis: 50%;
-}
+#article-nav-older, #article-nav-newer { flex-basis: 50%; }
+#article-nav-newer { order: 1; text-align: right; }
 
-#article-nav-newer {
-  order: 1;
-  text-align: right;
-}
-
-/* pagination */
+/* =========================
+   pagination
+   ========================= */
 .page-nav {
   margin: 1em 0;
   text-align: center;
@@ -217,23 +245,18 @@ body {
   margin: 0 0.4em;
 }
 
-.current {
-  color: var(--text-color);
-}
- 
-/* typography */
+.current { color: var(--text-color); }
+
+/* =========================
+   typography
+   ========================= */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-p, ul, ol, h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 1rem 0;
-}
-
-ul, ol {
-  padding-left: 1em;
-}
+p, ul, ol, h1, h2, h3, h4, h5, h6 { margin: 0 0 1rem 0; }
+ul, ol { padding-left: 1em; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
@@ -248,9 +271,7 @@ h1, h2 {
   margin-top: 2rem;
 }
 
-h2 {
-  font-size: 1.5em;
-}
+h2 { font-size: 1.5em; }
 
 h3, h4, h5, h6 {
   font-size: 1em;
@@ -277,9 +298,7 @@ blockquote {
   text-align: center;
 }
 
-.article .article-entry blockquote footer cite:before {
-  content: " — ";
-}
+.article .article-entry blockquote footer cite:before { content: " — "; }
 
 .pullquote {
   border: 0;
@@ -290,9 +309,7 @@ blockquote {
   width: 40%;
 }
 
-.pullquote p {
-  margin: 0;
-}
+.pullquote p { margin: 0; }
 
 .pullquote.left {
   float: left;
@@ -313,10 +330,9 @@ blockquote {
   text-align: center;
 }
 
-.katex {
-  font-size: 1.1em;
-}
+.katex { font-size: 1.1em; }
 
+/* normal links inside article body get underline via border */
 .article-entry a {
   -webkit-transition-duration: .3s;
   -webkit-transition-property: border-bottom;
@@ -324,7 +340,7 @@ blockquote {
   transition-duration: .3s;
   transition-property: border-bottom;
 }
- 
+
 .article-entry a:hover {
   -webkit-transition-duration: .3s;
   -webkit-transition-property: border-bottom;
@@ -333,36 +349,58 @@ blockquote {
   transition-property: border-bottom;
 }
 
-#title a, .article-title a, a.nav-link, .archive-article-title a, .article-nav a, a.page-number, a.extend, .month, .article-footer a, .article-category a, .article-tag a, .article-more-link a {
+/* link hover background */
+#title a, .article-title a, a.nav-link, .archive-article-title a,
+.article-nav a, a.page-number, a.extend, .month, .article-footer a,
+.article-category a, .article-tag a, .article-more-link a {
   -webkit-transition-duration: .3s;
   -webkit-transition-property: background;
-  transition-duration: .3s;
-  transition-property: background;
-}
- 
-#title a:hover, .article-title a:hover, a.nav-link:hover, .archive-article-title a:hover, .article-nav a:hover, a.page-number:hover, a.extend:hover, .month:hover, .article-footer a:hover, .article-category a:hover, .article-tag a:hover, .article-more-link a:hover {
-  -webkit-transition-duration: .3s;
-  -webkit-transition-property: background;
-  background: var(--link-bg-color) !important;
   transition-duration: .3s;
   transition-property: background;
 }
 
+#title a:hover, .article-title a:hover, a.nav-link:hover, .archive-article-title a:hover,
+.article-nav a:hover, a.page-number:hover, a.extend:hover, .month:hover, .article-footer a:hover,
+.article-category a:hover, .article-tag a:hover, .article-more-link a:hover {
+  -webkit-transition-duration: .3s;
+  -webkit-transition-property: background;
+  background: var(--link-bg-color);
+  transition-duration: .3s;
+  transition-property: background;
+}
+
+/* category/tags */
 .article-category, .article-tag {
   color: var(--secondary-color);
-  font-family: var( --secondary-stack);
+  font-family: var(--secondary-stack);
   margin-top: 2em;
 }
 
+/* =========================
+   read-more ("...")
+   ========================= */
 .article-more-link {
-  font-size: 0.9em;
-  letter-spacing: 0.1em;
   margin-bottom: 1.1em;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;     /* no forced uppercase */
+  letter-spacing: 0;        /* nicer for dots */
 }
- 
-/* miscellaneous */
+
+/* bigger dots, no underline/line */
+.article-more-link a {
+  color: var(--accent-color);
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  font-size: 1.8em;         /* tweak: 1.6em–2.2em */
+  line-height: 1;
+  display: inline-block;
+}
+
+/* =========================
+   miscellaneous
+   ========================= */
 img {
   box-sizing: border-box;
   display: block;
@@ -386,9 +424,7 @@ a img:hover {
   transition-property: border;
 }
 
-.article-gallery img, table {
-  margin: 1em auto;
-}
+.article-gallery img, table { margin: 1em auto; }
 
 td, th, table caption, table td, table th {
   border-bottom: 1px solid var(--tertiary-color);
@@ -411,11 +447,10 @@ td, th, table caption, table td, table th {
   height: 100%;
   margin-top: 0;
 }
- 
-::selection {
-  background-color: var(--selection-color);
-}
 
+::selection { background-color: var(--selection-color); }
+
+/* settings widget */
 #settings-container {
   background: var(--tertiary-color);
   bottom: 0;
@@ -427,60 +462,4 @@ td, th, table caption, table td, table th {
   cursor: pointer;
   float: right;
   padding: 0.5em;
-}
-.article-more-link a {
-  color: #FF6B00 !important;
-  background: transparent !important;
-  text-decoration: none !important;
-  box-shadow: none !important;          /* kills grey underline tricks */
-  border-bottom: 0.5px solid #000 !important;  /* your black “tiny line” */
-  display: inline-block;
-  line-height: 1;
-}
-body {
-  background-color: #fafafa !important;
-  color: #111;
-}
-.article-entry {
-  max-width: 720px;      /* keeps lines readable like a book */
-  line-height: 1.7;      /* comfortable reading spacing */
-  font-size: 1.05rem;    /* slightly larger text */
-}
-
-.article-entry p {
-  margin-bottom: 1.3em;  /* nicer paragraph spacing */
-}
-
-/* Orange accent line under the header divider */
-#header {
-  position: relative; /* needed for ::after positioning */
-}
-
-#header::after {
-  content: "";
-  display: block;
-  height: 1px;              /* same thickness as the grey line */
-  background: #FF6B00;      /* Penguin-ish orange */
-  margin-top: 6px;          /* space below the existing grey line */
-}
-/* Orange meta separator "×" */
-.meta-sep {
-  color: #FF6B00;
-}
-/* Orange menu separator "×" (Home × Archives) */
-.nav-spacer {
-  color: #FF6B00 !important;
-}
-/* Style the "..." read-more link */
-
-.article-more-link a {
-  text-decoration: none !important;   /* remove underline */
-  border-bottom: none !important;     /* remove theme border underline */
-  font-size: 1.6em;                   /* increase dot size */
-  font-weight: 500;
-}
-
-/* Sometimes the theme draws the line using ::after */
-.article-more-link a::after {
-  display: none !important;
 }
