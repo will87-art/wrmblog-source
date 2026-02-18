@@ -474,3 +474,11 @@ td, th, table caption, table td, table th {
   line-height: 1 !important;
   display: inline-block;
 }
+
+@media (min-width:1000px){
+  .container,
+  .content,
+  .post{
+    max-width:1050px;
+  }
+}
