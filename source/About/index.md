@@ -24,6 +24,7 @@ tags:
 }
 </style>
 
+<div class="layout-wide">
 <div class="section-block">
 <div class="section-title">Me.</div>
 <div class="section-line"></div>
@@ -32,7 +33,9 @@ My name is William, I live on the South coast of the UK. I am married to Lou and
 
 
 </div>
+</div>
 
+<div class="layout-wide">
 <div class="section-block">
 <div class="section-title">My Writing.</div>
 <div class="section-line"></div>
@@ -42,7 +45,9 @@ You may find my writing to be pretentious and verbose, maybe cringeworthy or der
 
 
 </div>
+</div>
 
+<div class="layout-wide">
 <div class="section-block">
 <div class="section-title">Why.</div>
 <div class="section-line"></div>
@@ -50,7 +55,9 @@ You may find my writing to be pretentious and verbose, maybe cringeworthy or der
 Because I said I would to James and to Steve. Because I find other people reading what I write excruciating. Because I want to be known and understood. Because this feels like a safe way to share some of who I am through my creativity. It feels safe for me because it is published and there is no feedback mechanism… I can put it out into the world and stay safe inside a boundary of my own making… and for that reason, I will find some way to receive feedback… eventually. When I do you may congratulate me on being brave.
 
 </div>
+</div>
 
+<div class="layout-wide">
 <div class="section-block">
 <div class="section-title">Tags:</div>
 <div class="section-line"></div>
@@ -62,5 +69,6 @@ Lent – I have committed to writing something each day in Lent as a discipline 
 Faith – Refers to my Christian faith. My faith is my framework for understanding the world; it is precious to me. Sometimes I do not know if God is real. Sometimes I do not know if I believe or if I am pretending to. Sometimes I am pretending to. As a result of this, my faith has become a choice, no longer because I know it to be true but because I choose it. Much like a horseshoe nailed above a door, being lucky, whether you believe in it or not (see Niels Bohr), I rely on the fact that God exists, whether I believe in him or not. 
 
 
+</div>
 </div>
 
