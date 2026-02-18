@@ -475,10 +475,44 @@ td, th, table caption, table td, table th {
   display: inline-block;
 }
 
-@media (min-width:1000px){
-  .container,
-  .content,
-  .post{
-    max-width:1050px;
+/* ----------------------------
+   Pro responsive content widths
+   ---------------------------- */
+
+/* Default long-form width (posts) */
+:root{
+  --measure-prose: 72ch;      /* ideal reading width */
+  --measure-page:  1000px;    /* standard page width */
+  --measure-wide:  1120px;    /* wide layout for special pages */
+  --gutter:        4vw;       /* responsive side padding */
+}
+
+/* Apply a sensible max-width to common content containers */
+#content,
+.post-content,
+.article-entry,
+.page .post-content,
+.page-content,
+article{
+  max-width: min(calc(100vw - (var(--gutter) * 2)), var(--measure-prose));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make pages a bit wider than posts on desktop */
+@media (min-width: 1000px){
+  .page #content,
+  .page .post-content,
+  .page .article-entry,
+  .page article{
+    max-width: min(calc(100vw - (var(--gutter) * 2)), var(--measure-page));
   }
 }
+
+/* Utility: wide layout when you want it */
+.layout-wide{
+  max-width: min(calc(100vw - (var(--gutter) * 2)), var(--measure-wide)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
