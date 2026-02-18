@@ -467,3 +467,7 @@ body {
 .meta-sep {
   color: #FF6B00;
 }
+/* Orange menu separator "×" (Home × Archives) */
+.nav-spacer {
+  color: #FF6B00 !important;
+}
