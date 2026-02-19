@@ -511,3 +511,21 @@ td, th, table caption, table td, table th {
     max-width: min(calc(100vw - (var(--gutter) * 2)), var(--measure-page));
   }
 }
+pre.poem{
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: table;      /* makes it shrink-to-fit, so centering works */
+  text-align: left;
+
+  white-space: pre;
+  overflow: visible;
+  tab-size: 4;
+}
+.ascii{
+  font-family: Courier, monospace;
+}
