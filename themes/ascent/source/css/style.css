@@ -537,3 +537,22 @@ pre.poem {
     font-size: clamp(0.72rem, 2.6vw, 0.95rem);
   }
 }
+@media (max-width: 600px) {
+  pre.poem {
+    /* keep exact formatting */
+    white-space: pre !important;
+
+    /* let it fit the screen */
+    width: auto !important;       /* overrides inline width:62ch */
+    max-width: 100% !important;
+    display: block !important;    /* overrides display: table */
+
+    /* if it’s still wider than the phone, allow scrolling instead of breaking formatting */
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+
+    /* your scaling */
+    font-size: clamp(0.72rem, 2.6vw, 0.95rem) !important;
+  }
+}
