@@ -541,3 +541,5 @@ pre.poem {
   pre.poem {
     /* keep exact formatting */
     white-space: pre !important;
+    }
+}
