@@ -529,3 +529,11 @@ pre.poem{
 .ascii{
   font-family: Courier, monospace;
 }
+pre.poem {
+  white-space: pre;
+}
+@media (max-width: 600px) {
+  pre.poem {
+    font-size: clamp(0.72rem, 2.6vw, 0.95rem);
+  }
+}
