@@ -1,7 +1,8 @@
 ---
 title: Mixed Feelings
 date: 2026-2-21
-tags: Lent
+tags: 
+- Lent
 ---
 A strange phrase, I think it might be a good description of how I feel most of the time. I’m not sure there are many moments that carry a single all-consuming emotion or thought. Getting lost in an emotion is rare for me.
 <!-- more -->

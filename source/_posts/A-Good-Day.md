@@ -1,7 +1,8 @@
 ---
 title: A Good Day
 date: 2026-02-20
-tags: Lent
+tags: 
+ - Lent
 ---
 I wasnt sure what I write today. I half composed a poem, and thought about writing something moody about the sullen grey sea. But instead, I have decided to write down the things that made me feel connected. Andy at work bought me a coffee and joked with me.
 <!-- more -->
