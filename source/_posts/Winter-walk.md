@@ -1,13 +1,13 @@
 ---
 title: Winter Walk
 date: 2026-2-23
-tags: -EICW 
-      -Lent
-      -Poem
+tags: 
+ -EICW 
+ -Lent
+ -Poem
 ---
-<pre class="poem">
 
-Stormy sky and whirling wind,
+<pre class="poem poem-center">Stormy sky and whirling wind,
 
 Salty smell and foamy flotsum,
 
@@ -15,9 +15,7 @@ Salty smell and foamy flotsum,
 
 <!-- more -->
 
-<pre class="poem">
-
-Smashing surf and falling fog,
+<pre class="poem poem-center">Smashing surf and falling fog,
 
 Numb nose and freezing fingers,
 
