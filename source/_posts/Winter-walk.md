@@ -3,10 +3,17 @@ title: Winter Walk
 date: 2026-2-23
 tags: EICW
 ---
+<pre class="poem">
 
 Stormy sky and whirling wind,
 
 Salty smell and foamy flotsum,
+
+</pre>
+
+<!-- more -->
+
+<pre class="poem">
 
 Smashing surf and falling fog,
 
@@ -21,3 +28,4 @@ Sunlight slanting, heating hands,
 Towards twilight and heading home,
 
 Moment measured and... breathe.
+</pre>

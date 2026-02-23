@@ -1,0 +1,8 @@
+---
+title: A Good Day
+date: 2026-02-20
+tags: Lent
+---
+I wasnt sure what I write today. I half composed a poem, and thought about writing something moody about the sullen grey sea. But instead, I have decided to write down the things that made me feel connected. Andy at work bought me a coffee and joked with me.
+<!-- more -->
+ My sister Rosie made me laugh whilst she cut my hair. Charlotte helped me to plan out next week on the whiteboard of doom. I worked out how to program a wireless light control and showed the kids and we played with it; on off, on off, dim to bright and back again. Tom sent me plans for a new building that were exciting and progressive. Tim worried with me about a mutual friend having a hard time. I got a message from Luke showing me something great that he's made. I reminded Gids he'd done a good thing, and at it cheered him up. I watched a film and shared whiskey with Lou. It rained, and I was tired today. I had to cycle to work in my work boots, have tricky conversations and do things I find hard. But it was a good day. A day full of people being kind, funny, brave, tender, and uncertain, and I got to be with each of them.
