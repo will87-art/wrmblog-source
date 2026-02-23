@@ -1,6 +1,6 @@
 ---
 title: Awake Before My Alarm
-date: 19-02-2026
+date: 2026-02-19
 tags:   -Poem
 		-Lent
 
