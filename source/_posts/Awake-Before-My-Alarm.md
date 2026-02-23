@@ -1,9 +1,9 @@
 ---
 title: Awake Before My Alarm
 date: 2026-02-19
-tags:   -Poem
-		-Lent
-
+tags:
+  - Poem
+  - Lent
 ---
 <pre style="background:transparent;border:0;padding:0;margin:0 auto;display:block;width:62ch;text-align:left;">
 As I wake.....
