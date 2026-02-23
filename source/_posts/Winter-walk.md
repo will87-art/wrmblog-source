@@ -1,7 +1,9 @@
 ---
 title: Winter Walk
 date: 2026-2-23
-tags: EICW
+tags: -EICW 
+      -Lent
+      -Poem
 ---
 <pre class="poem">
 
