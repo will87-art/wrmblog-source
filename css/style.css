@@ -543,3 +543,8 @@ pre.poem {
     white-space: pre !important;
     }
 }
+pre.poem.poem-center{
+  display: block !important;     /* override display: table */
+  width: 100% !important;        /* give it real width to center within */
+  text-align: center !important; /* center the lines */
+}
