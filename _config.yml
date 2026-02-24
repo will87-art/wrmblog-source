@@ -106,7 +106,7 @@ theme: ascent
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/will87-art/my-blog.git
+  repo: https://github.com/will87-art/wrmblog-source.git
   branch: gh-pages
 
 # hexo-admin authentification

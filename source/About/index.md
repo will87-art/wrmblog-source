@@ -59,6 +59,16 @@ Because I said I would to James and to Steve. Because I find other people readin
 
 <div class="layout-wide">
 <div class="section-block">
+<div class="section-title">Contact:</div>
+<div class="section-line"></div>
+
+Email: wrmblog.art@gmail.com
+
+</div>
+</div>
+
+<div class="layout-wide">
+<div class="section-block">
 <div class="section-title">Tags:</div>
 <div class="section-line"></div>
 
