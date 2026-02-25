@@ -4,6 +4,7 @@ date: 2026-02-25
 tags:
 - Peom
 - Haiku
+- Lent
 ---
 Morning
 
