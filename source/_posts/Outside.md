@@ -23,7 +23,7 @@ When the sound of voices muffled by thick walls echo faintly over water.
 
 Why would you be inside?
 When night time birds wake and chirup softly.
-When the cold water beckons and calls out to the ancient one buried deep inside your sole.
+When the cold water beckons and calls out to the ancient one buried deep inside your soul.
 
 Why would you be inside?
 When your heart still holds the seeping wound of grief.
