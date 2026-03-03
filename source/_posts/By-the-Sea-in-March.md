@@ -1,6 +1,6 @@
 ---
 title: By the Sea in March
-date: 2026-03-03 12:22:55
+date: 2026-03-02
 tags:
 - Lent
 - Poem
