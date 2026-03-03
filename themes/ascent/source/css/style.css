@@ -548,3 +548,14 @@ pre.poem.poem-center{
   width: 100% !important;        /* give it real width to center within */
   text-align: center !important; /* center the lines */
 }
+
+.poem {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 42rem;
+  line-height: 1.6;
+}
+
+.poem{
+  white-space: pre-wrap;
+}
