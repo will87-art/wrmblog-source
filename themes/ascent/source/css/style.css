@@ -559,3 +559,18 @@ pre.poem.poem-center{
 .poem{
   white-space: pre-wrap;
 }
+
+.poem {
+  white-space: pre-line;   /* THIS preserves your markdown line breaks */
+  margin: 0 auto;
+  max-width: 45rem;
+  line-height: 1.7;
+}
+
+.poem.poem-center {
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+}
