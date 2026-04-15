@@ -53,3 +53,5 @@ No hindrance to their advances nor the waning of their ebbing flood.
 
 Maybe a brick has come adrift as I write this.
 I wonder what happened as you read?
+
+<span style="font-size:0.85em; font-style:italic;">Listening to - our lives entwined  - Leaving Laurel</span>
