@@ -28,5 +28,5 @@ Sunlight slanting, heating hands,
 
 Towards twilight and heading home,
 
-Moment measured and... breathe.
+Moment measured... breathe.
 </pre>
