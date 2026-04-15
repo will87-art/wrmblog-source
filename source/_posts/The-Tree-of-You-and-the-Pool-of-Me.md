@@ -85,7 +85,7 @@ Held water, once still and caught in the places of un-becoming,
 
 Re-join the ebbing flood that falls and flows and fills, and fills again.
 
-Returning now, the mingled waters holds, and holds within the rock-hewn bowl,
+Returning now, the mingled waters hold, and hold within the rock-hewn bowl,
 
 Knowing water, for me, the creature of the sea, and nourish now the rooted life of you spreading free.
 
